@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.3" timestamp="2017-04-23T23:51:59.281">
+<file name="dominio/Alianza.java">
+<violation beginline="8" endline="8" begincolumn="9" endcolumn="29" rule="LooseCoupling" ruleset="Coupling Rules" package="dominio" class="Alianza" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
+Avoid using implementation types like 'LinkedList'; use the interface instead
+</violation>
+<violation beginline="15" endline="15" begincolumn="16" endcolumn="36" rule="LooseCoupling" ruleset="Coupling Rules" package="dominio" class="Alianza" method="getAliados" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
+Avoid using implementation types like 'LinkedList'; use the interface instead
+</violation>
+<violation beginline="19" endline="19" begincolumn="32" endcolumn="52" rule="LooseCoupling" ruleset="Coupling Rules" package="dominio" class="Alianza" method="setAliados" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
+Avoid using implementation types like 'LinkedList'; use the interface instead
+</violation>
+<violation beginline="27" endline="27" begincolumn="49" endcolumn="50" rule="ShortVariable" ruleset="Naming Rules" package="dominio" class="Alianza" method="eliminarPersonaje" variable="pj" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like pj
+</violation>
+<violation beginline="31" endline="31" begincolumn="47" endcolumn="48" rule="ShortVariable" ruleset="Naming Rules" package="dominio" class="Alianza" method="a&#xf1;adirPersonaje" variable="pj" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like pj
+</violation>
+</file>
+<file name="dominio/Asesino.java">
+<violation beginline="23" endline="24" begincolumn="25" endcolumn="44" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Asesino" method="habilidad1" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="34" endline="34" begincolumn="33" endcolumn="68" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Asesino" method="habilidad2" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="36" endline="36" begincolumn="33" endcolumn="66" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Asesino" method="habilidad2" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+</file>
+<file name="dominio/Casta.java">
+<violation beginline="5" endline="62" begincolumn="17" endcolumn="1" rule="AbstractNaming" ruleset="Naming Rules" package="dominio" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#AbstractNaming" priority="3">
+Abstract classes should be named AbstractXXX
+</violation>
+<violation beginline="6" endline="6" begincolumn="26" endcolumn="49" rule="LongVariable" ruleset="Naming Rules" package="dominio" class="Casta" variable="probabilidadGolpeCritico" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like probabilidadGolpeCritico
+</violation>
+<violation beginline="7" endline="7" begincolumn="26" endcolumn="47" rule="LongVariable" ruleset="Naming Rules" package="dominio" class="Casta" variable="probabilidadEvitarDa&#xf1;o" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like probabilidadEvitarDa&#xf1;o
+</violation>
+<violation beginline="43" endline="43" begincolumn="56" endcolumn="79" rule="LongVariable" ruleset="Naming Rules" package="dominio" class="Casta" method="setProbabilidadGolpeCritico" variable="probabilidadGolpeCritico" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like probabilidadGolpeCritico
+</violation>
+<violation beginline="51" endline="51" begincolumn="54" endcolumn="75" rule="LongVariable" ruleset="Naming Rules" package="dominio" class="Casta" method="setProbabilidadEvitarDa&#xf1;o" variable="probabilidadEvitarDa&#xf1;o" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like probabilidadEvitarDa&#xf1;o
+</violation>
+</file>
+<file name="dominio/Elfo.java">
+<violation beginline="5" endline="5" begincolumn="53" endcolumn="54" rule="ShortVariable" ruleset="Naming Rules" package="dominio" class="Elfo" variable="id" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+<violation beginline="17" endline="19" begincolumn="20" endcolumn="40" rule="ExcessiveParameterList" ruleset="Code Size Rules" package="dominio" class="Elfo" externalInfoUrl="http://pmd.sourceforge.net/rules/codesize.html#ExcessiveParameterList" priority="3">
+Avoid really long parameter lists.
+</violation>
+<violation beginline="33" endline="34" begincolumn="25" endcolumn="44" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Elfo" method="habilidadRaza1" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="43" endline="44" begincolumn="25" endcolumn="44" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Elfo" method="habilidadRaza2" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+</file>
+<file name="dominio/Guerrero.java">
+<violation beginline="24" endline="25" begincolumn="25" endcolumn="44" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Guerrero" method="habilidad1" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="47" endline="50" begincolumn="33" endcolumn="33" rule="AvoidDeeplyNestedIfStmts" ruleset="Design Rules" package="dominio" class="Guerrero" method="habilidad3" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#AvoidDeeplyNestedIfStmts" priority="3">
+Deeply nested if..then statements are hard to read
+</violation>
+</file>
+<file name="dominio/Hechicero.java">
+<violation beginline="23" endline="24" begincolumn="25" endcolumn="44" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Hechicero" method="habilidad1" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+</file>
+<file name="dominio/Humano.java">
+<violation beginline="5" endline="5" begincolumn="55" endcolumn="56" rule="ShortVariable" ruleset="Naming Rules" package="dominio" class="Humano" variable="id" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+<violation beginline="14" endline="15" begincolumn="22" endcolumn="68" rule="ExcessiveParameterList" ruleset="Code Size Rules" package="dominio" class="Humano" externalInfoUrl="http://pmd.sourceforge.net/rules/codesize.html#ExcessiveParameterList" priority="3">
+Avoid really long parameter lists.
+</violation>
+<violation beginline="37" endline="40" begincolumn="25" endcolumn="25" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="dominio" class="Humano" method="habilidadRaza2" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="dominio/MyRandom.java">
+<violation beginline="3" endline="12" begincolumn="23" endcolumn="1" rule="UseSingleton" ruleset="Design Rules" package="dominio" class="MyRandom" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#UseSingleton" priority="3">
+All methods are static.  Consider using Singleton instead.  Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+</file>
+<file name="dominio/NonPlayableCharacter.java">
+<violation beginline="10" endline="10" begincolumn="34" endcolumn="52" rule="LongVariable" ruleset="Naming Rules" package="dominio" class="NonPlayableCharacter" variable="dificultadAleatoria" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like dificultadAleatoria
+</violation>
+<violation beginline="10" endline="10" begincolumn="34" endcolumn="57" rule="VariableNamingConventions" ruleset="Naming Rules" package="dominio" class="NonPlayableCharacter" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#VariableNamingConventions" priority="1">
+Variables that are final and static should be in all caps.
+</violation>
+<violation beginline="17" endline="17" begincolumn="25" endcolumn="57" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="NonPlayableCharacter" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="19" endline="19" begincolumn="25" endcolumn="51" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="NonPlayableCharacter" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="21" endline="38" begincolumn="17" endcolumn="17" rule="SwitchStmtsShouldHaveDefault" ruleset="Design Rules" package="dominio" class="NonPlayableCharacter" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SwitchStmtsShouldHaveDefault" priority="3">
+Switch statements should have a default label
+</violation>
+<violation beginline="93" endline="93" begincolumn="25" endcolumn="68" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="NonPlayableCharacter" method="atacar" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="96" endline="96" begincolumn="35" endcolumn="38" rule="AvoidReassigningParameters" ruleset="Design Rules" package="dominio" class="NonPlayableCharacter" method="serAtacado" variable="da&#xf1;o" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#AvoidReassigningParameters" priority="2">
+Avoid reassigning parameters such as 'da&#xf1;o'
+</violation>
+<violation beginline="108" endline="108" begincolumn="38" endcolumn="40" rule="UncommentedEmptyMethod" ruleset="Design Rules" package="dominio" class="NonPlayableCharacter" method="despuesDeTurno" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#UncommentedEmptyMethod" priority="3">
+Document empty method
+</violation>
+<violation beginline="110" endline="112" begincolumn="47" endcolumn="9" rule="UncommentedEmptyMethod" ruleset="Design Rules" package="dominio" class="NonPlayableCharacter" method="ganarExperiencia" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#UncommentedEmptyMethod" priority="3">
+Document empty method
+</violation>
+</file>
+<file name="dominio/Orco.java">
+<violation beginline="5" endline="5" begincolumn="53" endcolumn="54" rule="ShortVariable" ruleset="Naming Rules" package="dominio" class="Orco" variable="id" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+<violation beginline="17" endline="18" begincolumn="20" endcolumn="68" rule="ExcessiveParameterList" ruleset="Code Size Rules" package="dominio" class="Orco" externalInfoUrl="http://pmd.sourceforge.net/rules/codesize.html#ExcessiveParameterList" priority="3">
+Avoid really long parameter lists.
+</violation>
+<violation beginline="31" endline="32" begincolumn="25" endcolumn="44" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Orco" method="habilidadRaza1" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+</file>
+<file name="dominio/Personaje.java">
+<violation beginline="1" endline="445" begincolumn="1" endcolumn="2" rule="ExcessivePublicCount" ruleset="Code Size Rules" package="dominio" externalInfoUrl="http://pmd.sourceforge.net/rules/codesize.html#ExcessivePublicCount" priority="3">
+This class has a bunch of public methods and attributes
+</violation>
+<violation beginline="5" endline="445" begincolumn="17" endcolumn="1" rule="AbstractNaming" ruleset="Naming Rules" package="dominio" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#AbstractNaming" priority="3">
+Abstract classes should be named AbstractXXX
+</violation>
+<violation beginline="5" endline="445" begincolumn="67" endcolumn="1" rule="TooManyMethods" ruleset="Code Size Rules" package="dominio" class="Personaje" externalInfoUrl="http://pmd.sourceforge.net/rules/codesize.html#TooManyMethods" priority="3">
+This class has too many methods, consider refactoring it.
+</violation>
+<violation beginline="5" endline="445" begincolumn="17" endcolumn="1" rule="TooManyFields" ruleset="Code Size Rules" package="dominio" externalInfoUrl="http://pmd.sourceforge.net/rules/codesize.html#TooManyFields" priority="3">
+Too many fields
+</violation>
+<violation beginline="24" endline="24" begincolumn="23" endcolumn="23" rule="ShortVariable" ruleset="Naming Rules" package="dominio" class="Personaje" variable="x" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like x
+</violation>
+<violation beginline="25" endline="25" begincolumn="23" endcolumn="23" rule="ShortVariable" ruleset="Naming Rules" package="dominio" class="Personaje" variable="y" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like y
+</violation>
+<violation beginline="49" endline="50" begincolumn="17" endcolumn="91" rule="ForLoopsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" method="cargarTablaNivel" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#ForLoopsMustUseBraces" priority="3">
+Avoid using for statements without curly braces
+</violation>
+<violation beginline="53" endline="53" begincolumn="58" endcolumn="59" rule="ShortVariable" ruleset="Naming Rules" package="dominio" class="Personaje" variable="id" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+<violation beginline="62" endline="63" begincolumn="17" endcolumn="36" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="64" endline="65" begincolumn="17" endcolumn="42" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="66" endline="67" begincolumn="17" endcolumn="38" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="74" endline="74" begincolumn="26" endcolumn="54" rule="ConstructorCallsOverridableMethod" ruleset="Design Rules" package="dominio" class="Personaje" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ConstructorCallsOverridableMethod" priority="1">
+Overridable method 'calcularPuntosDeAtaque' called during object construction
+</violation>
+<violation beginline="75" endline="75" begincolumn="27" endcolumn="56" rule="ConstructorCallsOverridableMethod" ruleset="Design Rules" package="dominio" class="Personaje" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ConstructorCallsOverridableMethod" priority="1">
+Overridable method 'calcularPuntosDeDefensa' called during object construction
+</violation>
+<violation beginline="76" endline="76" begincolumn="25" endcolumn="52" rule="ConstructorCallsOverridableMethod" ruleset="Design Rules" package="dominio" class="Personaje" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ConstructorCallsOverridableMethod" priority="1">
+Overridable method 'calcularPuntosDeMagia' called during object construction
+</violation>
+<violation beginline="80" endline="82" begincolumn="25" endcolumn="40" rule="ExcessiveParameterList" ruleset="Code Size Rules" package="dominio" class="Personaje" externalInfoUrl="http://pmd.sourceforge.net/rules/codesize.html#ExcessiveParameterList" priority="3">
+Avoid really long parameter lists.
+</violation>
+<violation beginline="99" endline="99" begincolumn="32" endcolumn="61" rule="ConstructorCallsOverridableMethod" ruleset="Design Rules" package="dominio" class="Personaje" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ConstructorCallsOverridableMethod" priority="1">
+Overridable method 'calcularPuntosDeDefensa' called during object construction
+</violation>
+<violation beginline="100" endline="100" begincolumn="31" endcolumn="59" rule="ConstructorCallsOverridableMethod" ruleset="Design Rules" package="dominio" class="Personaje" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ConstructorCallsOverridableMethod" priority="1">
+Overridable method 'calcularPuntosDeAtaque' called during object construction
+</violation>
+<violation beginline="101" endline="101" begincolumn="30" endcolumn="57" rule="ConstructorCallsOverridableMethod" ruleset="Design Rules" package="dominio" class="Personaje" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ConstructorCallsOverridableMethod" priority="1">
+Overridable method 'calcularPuntosDeMagia' called during object construction
+</violation>
+<violation beginline="242" endline="243" begincolumn="17" endcolumn="33" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" method="atacar" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="254" endline="254" begincolumn="20" endcolumn="34" rule="MethodNamingConventions" ruleset="Naming Rules" package="dominio" class="Personaje" method="golpe_critico" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#MethodNamingConventions" priority="1">
+Method names should not contain underscores
+</violation>
+<violation beginline="258" endline="260" begincolumn="16" endcolumn="9" rule="EmptyMethodInAbstractClassShouldBeAbstract" ruleset="Design Rules" package="dominio" class="Personaje" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#EmptyMethodInAbstractClassShouldBeAbstract" priority="1">
+An empty method in an abstract class should be abstract instead
+</violation>
+<violation beginline="258" endline="260" begincolumn="38" endcolumn="9" rule="UncommentedEmptyMethod" ruleset="Design Rules" package="dominio" class="Personaje" method="despuesDeTurno" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#UncommentedEmptyMethod" priority="3">
+Document empty method
+</violation>
+<violation beginline="296" endline="296" begincolumn="35" endcolumn="38" rule="AvoidReassigningParameters" ruleset="Design Rules" package="dominio" class="Personaje" method="serAtacado" variable="da&#xf1;o" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#AvoidReassigningParameters" priority="2">
+Avoid reassigning parameters such as 'da&#xf1;o'
+</violation>
+<violation beginline="296" endline="296" begincolumn="35" endcolumn="38" rule="AvoidReassigningParameters" ruleset="Design Rules" package="dominio" class="Personaje" method="serAtacado" variable="da&#xf1;o" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#AvoidReassigningParameters" priority="2">
+Avoid reassigning parameters such as 'da&#xf1;o'
+</violation>
+<violation beginline="313" endline="313" begincolumn="39" endcolumn="42" rule="AvoidReassigningParameters" ruleset="Design Rules" package="dominio" class="Personaje" method="serRobadoSalud" variable="da&#xf1;o" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#AvoidReassigningParameters" priority="2">
+Avoid reassigning parameters such as 'da&#xf1;o'
+</violation>
+<violation beginline="313" endline="313" begincolumn="39" endcolumn="42" rule="AvoidReassigningParameters" ruleset="Design Rules" package="dominio" class="Personaje" method="serRobadoSalud" variable="da&#xf1;o" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#AvoidReassigningParameters" priority="2">
+Avoid reassigning parameters such as 'da&#xf1;o'
+</violation>
+<violation beginline="315" endline="316" begincolumn="17" endcolumn="33" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" method="serRobadoSalud" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="318" endline="318" begincolumn="25" endcolumn="38" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" method="serRobadoSalud" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="326" endline="326" begincolumn="41" endcolumn="44" rule="AvoidReassigningParameters" ruleset="Design Rules" package="dominio" class="Personaje" method="serDesernegizado" variable="da&#xf1;o" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#AvoidReassigningParameters" priority="2">
+Avoid reassigning parameters such as 'da&#xf1;o'
+</violation>
+<violation beginline="326" endline="326" begincolumn="41" endcolumn="44" rule="AvoidReassigningParameters" ruleset="Design Rules" package="dominio" class="Personaje" method="serDesernegizado" variable="da&#xf1;o" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#AvoidReassigningParameters" priority="2">
+Avoid reassigning parameters such as 'da&#xf1;o'
+</violation>
+<violation beginline="328" endline="329" begincolumn="17" endcolumn="33" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" method="serDesernegizado" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="331" endline="331" begincolumn="25" endcolumn="40" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" method="serDesernegizado" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="341" endline="341" begincolumn="25" endcolumn="44" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" method="serCurado" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="343" endline="343" begincolumn="25" endcolumn="52" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" method="serCurado" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="348" endline="348" begincolumn="25" endcolumn="48" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" method="serEnergizado" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="350" endline="350" begincolumn="25" endcolumn="56" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" method="serEnergizado" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="367" endline="367" begincolumn="33" endcolumn="33" rule="ShortVariable" ruleset="Naming Rules" package="dominio" class="Personaje" method="aliar" variable="a" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like a
+</violation>
+<violation beginline="377" endline="377" begincolumn="25" endcolumn="37" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" method="aliar" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="380" endline="380" begincolumn="21" endcolumn="83" rule="MethodNamingConventions" ruleset="Naming Rules" package="dominio" class="Personaje" method="AsignarPuntosSkills" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#MethodNamingConventions" priority="1">
+Method names should not start with capital letters
+</violation>
+<violation beginline="381" endline="382" begincolumn="17" endcolumn="46" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" method="AsignarPuntosSkills" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="383" endline="384" begincolumn="17" endcolumn="50" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" method="AsignarPuntosSkills" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="385" endline="386" begincolumn="17" endcolumn="58" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="dominio" class="Personaje" method="AsignarPuntosSkills" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="392" endline="392" begincolumn="21" endcolumn="41" rule="LongVariable" ruleset="Naming Rules" package="dominio" class="Personaje" method="subirNivel" variable="acumuladorExperiencia" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like acumuladorExperiencia
+</violation>
+<violation beginline="421" endline="424" begincolumn="9" endcolumn="9" rule="CloneMethodMustImplementCloneable" ruleset="Clone Implementation Rules" package="dominio" class="Personaje" externalInfoUrl="http://pmd.sourceforge.net/rules/clone.html#CloneMethodMustImplementCloneable" priority="3">
+clone() method should be implemented only if implementing Cloneable interface
+</violation>
+<violation beginline="422" endline="424" begincolumn="19" endcolumn="9" rule="UselessOverridingMethod" ruleset="Basic Rules" package="dominio" class="Personaje" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UselessOverridingMethod" priority="3">
+Overriding method merely calls super
+</violation>
+<violation beginline="426" endline="426" begincolumn="46" endcolumn="46" rule="ShortVariable" ruleset="Naming Rules" package="dominio" class="Personaje" method="distanciaCon" variable="p" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like p
+</violation>
+</file>
+</pmd>

@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+<duplication lines="6" tokens="56">
+<file line="17" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="14" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Humano.java"/>
+<file line="17" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+	public Elfo(String nombre, int salud, int energia, int fuerza, int destreza, int inteligencia, Casta casta,
+			int experiencia, int nivel,
+			int idPersonaje) {
+		super(nombre, salud, energia, fuerza, destreza, inteligencia, casta,
+				experiencia, nivel, idPersonaje);
+		nombreRaza = "Elfo";
+]]>
+</codefragment>
+</duplication>
+<duplication lines="7" tokens="47">
+<file line="17" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="17" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+	}
+
+	// Golpe Crítico
+	public boolean habilidad1(Personaje caster, Peleable atacado) {
+		if (caster.getEnergia() > 10) {
+			caster.setEnergia(caster.getEnergia() - 10);
+			if (atacado.serAtacado((int) (caster.ataque * caster.getCasta().getDañoCritico())) > 0)
+]]>
+</codefragment>
+</duplication>
+<duplication lines="10" tokens="46">
+<file line="36" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="37" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+		}
+		return false;
+	}
+
+	// Ignorar Defensa
+	public boolean habilidad3(Personaje caster, Peleable atacado) { 
+		if (caster.getEnergia() > 10) {
+			caster.setEnergia(caster.getEnergia() - 10);
+			if (atacado instanceof Personaje) {
+				int defensa_original = ((Personaje) atacado).getDefensa();
+]]>
+</codefragment>
+</duplication>
+<duplication lines="10" tokens="44">
+<file line="23" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="24" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<codefragment>
+<![CDATA[
+			if (atacado.serAtacado((int) (caster.ataque * caster.getCasta().getDañoCritico())) > 0)
+				return true;
+		}
+		return false;
+	}
+
+	// Aumentar Evasion
+	public boolean habilidad2(Personaje caster, Peleable atacado) {
+		if (caster.getEnergia() > 10) {
+			caster.setEnergia(caster.getEnergia() - 10);
+]]>
+</codefragment>
+</duplication>
+<duplication lines="7" tokens="41">
+<file line="17" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="18" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="17" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+	}
+
+	// Golpe Crítico
+	public boolean habilidad1(Personaje caster, Peleable atacado) {
+		if (caster.getEnergia() > 10) {
+			caster.setEnergia(caster.getEnergia() - 10);
+			if (atacado.serAtacado((int) (caster.ataque * caster.getCasta().getDañoCritico())) > 0)
+]]>
+</codefragment>
+</duplication>
+<duplication lines="10" tokens="41">
+<file line="33" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="31" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+			if (atacado.serAtacado(this.getFuerza() + this.getNivel() * 10) > 0)
+				return true;
+		}
+		return false;
+	}
+
+	// Ataque Bosque
+	public boolean habilidadRaza2(Peleable atacado) {
+		if (this.getEnergia() > 10) {
+			this.setEnergia(this.getEnergia() - 10);
+]]>
+</codefragment>
+</duplication>
+<duplication lines="7" tokens="40">
+<file line="27" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="25" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+	}
+
+	// Golpe Level
+	public boolean habilidadRaza1(Peleable atacado) {
+		if (this.getEnergia() > 10) {
+			this.setEnergia(this.getEnergia() - 10);
+			if (atacado.serAtacado(this.getFuerza() + this.getNivel() * 10) > 0)
+]]>
+</codefragment>
+</duplication>
+<duplication lines="4" tokens="34">
+<file line="20" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="21" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="41" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="20" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<file line="42" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+	public boolean habilidad1(Personaje caster, Peleable atacado) {
+		if (caster.getEnergia() > 10) {
+			caster.setEnergia(caster.getEnergia() - 10);
+			if (atacado.serAtacado((int) (caster.ataque * caster.getCasta().getDañoCritico())) > 0)
+]]>
+</codefragment>
+</duplication>
+<duplication lines="4" tokens="34">
+<file line="30" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="40" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="28" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+	public boolean habilidadRaza1(Peleable atacado) {
+		if (this.getEnergia() > 10) {
+			this.setEnergia(this.getEnergia() - 10);
+			if (atacado.serAtacado(this.getFuerza() + this.getNivel() * 10) > 0)
+]]>
+</codefragment>
+</duplication>
+<duplication lines="4" tokens="33">
+<file line="20" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="30" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="21" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="41" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="20" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<file line="42" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+	public boolean habilidad1(Personaje caster, Peleable atacado) {
+		if (caster.getEnergia() > 10) {
+			caster.setEnergia(caster.getEnergia() - 10);
+			if (atacado.serAtacado((int) (caster.ataque * caster.getCasta().getDañoCritico())) > 0)
+]]>
+</codefragment>
+</duplication>
+<duplication lines="6" tokens="32">
+<file line="27" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="22" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Humano.java"/>
+<file line="25" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+	}
+
+	// Golpe Level
+	public boolean habilidadRaza1(Peleable atacado) {
+		if (this.getEnergia() > 10) {
+			this.setEnergia(this.getEnergia() - 10);
+]]>
+</codefragment>
+</duplication>
+<duplication lines="3" tokens="32">
+<file line="17" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="14" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Humano.java"/>
+<file line="17" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<file line="80" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	public Elfo(String nombre, int salud, int energia, int fuerza, int destreza, int inteligencia, Casta casta,
+			int experiencia, int nivel,
+			int idPersonaje) {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="3" tokens="31">
+<file line="20" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="21" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="31" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="41" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="20" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<file line="42" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+	public boolean habilidad1(Personaje caster, Peleable atacado) {
+		if (caster.getEnergia() > 10) {
+			caster.setEnergia(caster.getEnergia() - 10);
+]]>
+</codefragment>
+</duplication>
+<duplication lines="3" tokens="28">
+<file line="40" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="25" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Humano.java"/>
+<codefragment>
+<![CDATA[
+	public boolean habilidadRaza2(Peleable atacado) {
+		if (this.getEnergia() > 10) {
+			this.setEnergia(this.getEnergia() - 10);
+]]>
+</codefragment>
+</duplication>
+<duplication lines="3" tokens="28">
+<file line="30" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="28" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<file line="38" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+	public boolean habilidadRaza1(Peleable atacado) {
+		if (this.getEnergia() > 10) {
+			this.setEnergia(this.getEnergia() - 10);
+]]>
+</codefragment>
+</duplication>
+<duplication lines="4" tokens="27">
+<file line="20" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="30" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="21" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="41" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="20" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<file line="30" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<file line="42" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+	public boolean habilidad1(Personaje caster, Peleable atacado) {
+		if (caster.getEnergia() > 10) {
+			caster.setEnergia(caster.getEnergia() - 10);
+			if (atacado.serAtacado((int) (caster.ataque * caster.getCasta().getDañoCritico())) > 0)
+]]>
+</codefragment>
+</duplication>
+<duplication lines="9" tokens="26">
+<file line="33" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="28" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Humano.java"/>
+<file line="31" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+			if (atacado.serAtacado(this.getFuerza() + this.getNivel() * 10) > 0)
+				return true;
+		}
+		return false;
+	}
+
+	// Ataque Bosque
+	public boolean habilidadRaza2(Peleable atacado) {
+		if (this.getEnergia() > 10) {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="11" tokens="26">
+<file line="51" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/NonPlayableCharacter.java"/>
+<file line="110" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getNivel() {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="11" tokens="26">
+<file line="79" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/NonPlayableCharacter.java"/>
+<file line="143" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	}
+
+	public int getSalud() {
+		return salud;
+	}
+
+	public void setSalud(int salud) {
+		this.salud = salud;
+	}
+
+	public int atacar(Peleable atacado) {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="11" tokens="26">
+<file line="71" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/NonPlayableCharacter.java"/>
+<file line="215" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	}
+
+	public int getDefensa() {
+		return defensa;
+	}
+
+	public void setDefensa(int defensa) {
+		this.defensa = defensa;
+	}
+
+	public int getSalud() {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="3" tokens="25">
+<file line="31" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="30" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+	public boolean habilidad2(Personaje caster, Peleable atacado) { 
+		if (caster.getEnergia() > 10) {
+			caster.setEnergia(caster.getEnergia() - 10);
+]]>
+</codefragment>
+</duplication>
+<duplication lines="11" tokens="25">
+<file line="43" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/NonPlayableCharacter.java"/>
+<file line="159" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	}
+
+	public int getFuerza() {
+		return fuerza;
+	}
+
+	public void setFuerza(int fuerza) {
+		this.fuerza = fuerza;
+	}
+
+	public String getNombre() {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="11" tokens="25">
+<file line="59" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/NonPlayableCharacter.java"/>
+<file line="199" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	}
+
+	public int getNivel() {
+		return nivel;
+	}
+
+	public void setNivel(int nivel) {
+		this.nivel = nivel;
+	}
+
+	public boolean estaVivo() {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="8" tokens="24">
+<file line="10" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="22" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<codefragment>
+<![CDATA[
+		nombreRaza = "Elfo";
+
+		habilidadesRaza = new String[2];
+		habilidadesRaza[0] = "Golpe Level";
+		habilidadesRaza[1] = "Ataque Bosque";
+	}
+
+	public Elfo(String nombre, int salud, int energia, int fuerza, int destreza, int inteligencia, Casta casta,
+]]>
+</codefragment>
+</duplication>
+<duplication lines="8" tokens="24">
+<file line="10" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<file line="20" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+		nombreRaza = "Orco";
+
+		habilidadesRaza = new String[2];
+		habilidadesRaza[0] = "Golpe Defensa";
+		habilidadesRaza[1] = "Mordisco de Vida";
+	}
+
+	public Orco(String nombre, int salud, int energia, int fuerza, int destreza, int inteligencia, Casta casta,
+]]>
+</codefragment>
+</duplication>
+<duplication lines="3" tokens="23">
+<file line="5" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="5" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="5" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+	public Asesino(double prob_crit, double evasion, double daño_crit) {
+		super(prob_crit, evasion, daño_crit);
+		this.nombreCasta="Asesino";
+]]>
+</codefragment>
+</duplication>
+<duplication lines="3" tokens="21">
+<file line="5" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Humano.java"/>
+<file line="5" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+	public Humano(String nombre, Casta casta, int id) {
+		super(nombre, casta, id);
+		saludTope += 5;
+]]>
+</codefragment>
+</duplication>
+<duplication lines="5" tokens="21">
+<file line="313" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<file line="326" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	public int serRobadoSalud(int daño) {
+		daño -= this.defensa;
+		if (daño <= 0)
+			return 0;
+		if ((salud - daño) >= 0)
+]]>
+</codefragment>
+</duplication>
+<duplication lines="8" tokens="19">
+<file line="23" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="23" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+			if (atacado.serAtacado((int) (caster.ataque * caster.getCasta().getDañoCritico())) > 0)
+				return true;
+		}
+		return false;
+	}
+
+	// Aumentar Evasion
+	public boolean habilidad2(Personaje caster, Peleable atacado) {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="2" tokens="19">
+<file line="5" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="5" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Humano.java"/>
+<file line="5" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+	public Elfo(String nombre, Casta casta, int id) {
+		super(nombre, casta, id);
+]]>
+</codefragment>
+</duplication>
+<duplication lines="8" tokens="18">
+<file line="24" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="23" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+			if (atacado.serAtacado(caster.ataque * 2) > 0)
+				return true;
+		}
+		return false;
+	}
+	
+	// Aumentar Defensa
+	public boolean habilidad2(Personaje caster, Peleable atacado) { 
+]]>
+</codefragment>
+</duplication>
+<duplication lines="7" tokens="17">
+<file line="37" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="35" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<codefragment>
+<![CDATA[
+			return true;
+		}
+		return false;
+	}
+
+	// Robar
+	public boolean habilidad3(Personaje caster, Peleable atacado) {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="2" tokens="17">
+<file line="22" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="42" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="22" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+			caster.setEnergia(caster.getEnergia() - 10);
+			if (atacado.serAtacado((int) (caster.ataque * caster.getCasta().getDañoCritico())) > 0)
+]]>
+</codefragment>
+</duplication>
+<duplication lines="4" tokens="17">
+<file line="94" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/NonPlayableCharacter.java"/>
+<file line="294" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	}
+
+	public int serAtacado(int daño) {
+		if (MyRandom.nextDouble() >= 0.15) {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="2" tokens="16">
+<file line="30" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="25" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Humano.java"/>
+<file line="35" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Humano.java"/>
+<file line="28" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+	public boolean habilidadRaza1(Peleable atacado) {
+		if (this.getEnergia() > 10) {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="6" tokens="15">
+<file line="38" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="37" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+		}
+		return false;
+	}
+
+	// Robar
+	public boolean habilidad3(Personaje caster, Peleable atacado) {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="8" tokens="14">
+<file line="24" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="31" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+			if (atacado.serAtacado(caster.ataque * 2) > 0)
+				return true;
+		}
+		return false;
+	}
+	
+	// Aumentar Defensa
+	public boolean habilidad2(Personaje caster, Peleable atacado) { 
+]]>
+</codefragment>
+</duplication>
+<duplication lines="7" tokens="14">
+<file line="67" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/NonPlayableCharacter.java"/>
+<file line="290" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	}
+
+	public boolean estaVivo() {
+		return salud > 0;
+	}
+
+	public int getDefensa() {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="2" tokens="13">
+<file line="22" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="32" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="42" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="23" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="22" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<file line="30" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+			caster.setEnergia(caster.getEnergia() - 10);
+			if (atacado.serAtacado((int) (caster.ataque * caster.getCasta().getDañoCritico())) > 0)
+]]>
+</codefragment>
+</duplication>
+<duplication lines="5" tokens="13">
+<file line="100" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<file line="288" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+		this.ataque = this.calcularPuntosDeAtaque();
+		this.magia = this.calcularPuntosDeMagia();
+	}
+
+	public String getNombreRaza() {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="2" tokens="12">
+<file line="13" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="14" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="13" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+		habilidadesCasta = new String[3];
+		habilidadesCasta[0] = "Golpe Critico";
+]]>
+</codefragment>
+</duplication>
+<duplication lines="2" tokens="12">
+<file line="12" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="24" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="19" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Humano.java"/>
+<file line="12" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<file line="22" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+		habilidadesRaza = new String[2];
+		habilidadesRaza[0] = "Golpe Level";
+]]>
+</codefragment>
+</duplication>
+<duplication lines="8" tokens="12">
+<file line="23" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="33" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="24" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="23" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<file line="31" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+			if (atacado.serAtacado((int) (caster.ataque * caster.getCasta().getDañoCritico())) > 0)
+				return true;
+		}
+		return false;
+	}
+
+	// Aumentar Evasion
+	public boolean habilidad2(Personaje caster, Peleable atacado) {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="1" tokens="12">
+<file line="32" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="42" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="27" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Humano.java"/>
+<file line="42" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Humano.java"/>
+<file line="30" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<file line="40" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+			this.setEnergia(this.getEnergia() - 10);
+]]>
+</codefragment>
+</duplication>
+<duplication lines="1" tokens="12">
+<file line="397" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<file line="410" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+				&& (this.experiencia >= Personaje.tablaDeNiveles[this.nivel + 1] + acumuladorExperiencia)) {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="4" tokens="12">
+<file line="39" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/NonPlayableCharacter.java"/>
+<file line="415" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	}
+
+	public int otorgarExp() {
+		return this.nivel * 30;
+]]>
+</codefragment>
+</duplication>
+<duplication lines="2" tokens="12">
+<file line="430" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<file line="434" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<file line="438" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	public boolean habilidadCasta1(Peleable atacado) {
+		return this.getCasta().habilidad1(this, atacado);
+]]>
+</codefragment>
+</duplication>
+<duplication lines="1" tokens="11">
+<file line="5" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="19" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Casta.java"/>
+<file line="5" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="5" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+	public Asesino(double prob_crit, double evasion, double daño_crit) {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="5" tokens="11">
+<file line="23" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="43" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="23" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+			if (atacado.serAtacado((int) (caster.ataque * caster.getCasta().getDañoCritico())) > 0)
+				return true;
+		}
+		return false;
+	}
+]]>
+</codefragment>
+</duplication>
+<duplication lines="2" tokens="11">
+<file line="31" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="41" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="26" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Humano.java"/>
+<file line="37" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Humano.java"/>
+<file line="29" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<file line="39" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+		if (this.getEnergia() > 10) {
+			this.setEnergia(this.getEnergia() - 10);
+]]>
+</codefragment>
+</duplication>
+<duplication lines="1" tokens="11">
+<file line="5" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="5" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Humano.java"/>
+<file line="5" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<file line="53" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	public Elfo(String nombre, Casta casta, int id) {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="4" tokens="11">
+<file line="87" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/NonPlayableCharacter.java"/>
+<file line="239" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	}
+
+	public int atacar(Peleable atacado) {
+		if (MyRandom.nextDouble() <= 0.15) {// los NPC tienen 15% de golpes criticos
+]]>
+</codefragment>
+</duplication>
+<duplication lines="2" tokens="11">
+<file line="100" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<file line="287" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+		this.ataque = this.calcularPuntosDeAtaque();
+		this.magia = this.calcularPuntosDeMagia();
+]]>
+</codefragment>
+</duplication>
+<duplication lines="2" tokens="11">
+<file line="99" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<file line="288" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+		this.defensa = this.calcularPuntosDeDefensa();
+		this.ataque = this.calcularPuntosDeAtaque();
+]]>
+</codefragment>
+</duplication>
+<duplication lines="3" tokens="10">
+<file line="25" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Casta.java"/>
+<file line="27" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Casta.java"/>
+<codefragment>
+<![CDATA[
+	public abstract boolean habilidad1(Personaje caster, Peleable atacado);
+
+	public abstract boolean habilidad2(Personaje caster, Peleable atacado);
+]]>
+</codefragment>
+</duplication>
+<duplication lines="2" tokens="10">
+<file line="23" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="46" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<codefragment>
+<![CDATA[
+			caster.setEnergia(caster.getEnergia() - 10);
+			if (atacado.serAtacado(caster.ataque * 2) > 0)
+]]>
+</codefragment>
+</duplication>
+<duplication lines="3" tokens="10">
+<file line="10" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java"/>
+<file line="10" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="10" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<codefragment>
+<![CDATA[
+	public Asesino() {
+		super();
+		this.nombreCasta="Asesino";
+]]>
+</codefragment>
+</duplication>
+<duplication lines="1" tokens="10">
+<file line="43" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="91" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/NonPlayableCharacter.java"/>
+<codefragment>
+<![CDATA[
+			if (atacado.serAtacado((int) (this.magia)) > 0)
+]]>
+</codefragment>
+</duplication>
+<duplication lines="4" tokens="10">
+<file line="7" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="7" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+		energiaTope += 10;
+		salud = saludTope;
+		energia = energiaTope;
+		nombreRaza = "Elfo";
+]]>
+</codefragment>
+</duplication>
+<duplication lines="2" tokens="10">
+<file line="32" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="42" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="43" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="44" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java"/>
+<file line="30" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+			this.setEnergia(this.getEnergia() - 10);
+			if (atacado.serAtacado(this.getFuerza() + this.getNivel() * 10) > 0)
+]]>
+</codefragment>
+</duplication>
+<duplication lines="5" tokens="10">
+<file line="33" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="43" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java"/>
+<file line="24" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java"/>
+<file line="31" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java"/>
+<codefragment>
+<![CDATA[
+			if (atacado.serAtacado(this.getFuerza() + this.getNivel() * 10) > 0)
+				return true;
+		}
+		return false;
+	}
+]]>
+</codefragment>
+</duplication>
+<duplication lines="4" tokens="10">
+<file line="33" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Casta.java"/>
+<file line="39" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	}
+
+	public String[] getHabilidadesCasta() {
+		return habilidadesCasta;
+]]>
+</codefragment>
+</duplication>
+<duplication lines="2" tokens="10">
+<file line="10" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Alianza.java"/>
+<file line="57" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/NonPlayableCharacter.java"/>
+<file line="116" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	public Alianza(String nombre) {
+		this.nombre = nombre;
+]]>
+</codefragment>
+</duplication>
+<duplication lines="2" tokens="10">
+<file line="120" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/NonPlayableCharacter.java"/>
+<file line="124" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	public void setAtaque(int ataque) {
+		this.fuerza = ataque;
+]]>
+</codefragment>
+</duplication>
+<duplication lines="2" tokens="10">
+<file line="89" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/NonPlayableCharacter.java"/>
+<file line="244" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	public int atacar(Peleable atacado) {
+		if (MyRandom.nextDouble() <= 0.15) {// los NPC tienen 15% de golpes criticos
+]]>
+</codefragment>
+</duplication>
+<duplication lines="2" tokens="10">
+<file line="254" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<file line="266" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<file line="270" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<file line="274" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+	public int golpe_critico() {
+		return (int) (this.ataque * this.getCasta().getDañoCritico());
+]]>
+</codefragment>
+</duplication>
+<duplication lines="8" tokens="10">
+<file line="101" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/NonPlayableCharacter.java"/>
+<file line="306" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+				return daño;
+			}
+			return 0;// no le hace daño ya que la defensa fue mayor
+		}
+		return 0;// esquivo el golpe
+	}
+
+	public void despuesDeTurno() { }
+]]>
+</codefragment>
+</duplication>
+<duplication lines="3" tokens="10">
+<file line="297" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<file line="313" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<file line="326" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+		if (MyRandom.nextDouble() >= this.getCasta().getProbabilidadEvitarDaño()) {
+			daño -= this.defensa;
+			if (daño > 0) {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="4" tokens="10">
+<file line="279" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<file line="343" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+		this.salud = this.saludTope;
+	}
+
+	public void restablecerEnergia() {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="4" tokens="10">
+<file line="283" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<file line="350" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+		this.energia = this.energiaTope;
+	}
+
+	public void modificarAtributos() {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="1" tokens="10">
+<file line="397" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<file line="398" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<file line="410" path="/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java"/>
+<codefragment>
+<![CDATA[
+				&& (this.experiencia >= Personaje.tablaDeNiveles[this.nivel + 1] + acumuladorExperiencia)) {
+]]>
+</codefragment>
+</duplication>
+</pmd-cpd>

@@ -1,0 +1,12 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+jrpg-2017a-dominio,dominio,Alianza,16,17,0,0,6,6,4,2,4,2
+jrpg-2017a-dominio,dominio,Elfo,4,106,4,4,2,23,4,4,0,4
+jrpg-2017a-dominio,dominio,NonPlayableCharacter,88,114,6,8,27,24,18,9,13,6
+jrpg-2017a-dominio,dominio,MyRandom,3,6,0,0,1,2,1,2,1,2
+jrpg-2017a-dominio,dominio,Guerrero,6,104,6,6,3,26,6,5,0,5
+jrpg-2017a-dominio,dominio,Orco,4,108,4,4,2,25,4,4,0,4
+jrpg-2017a-dominio,dominio,Personaje,146,593,13,43,49,154,33,62,22,45
+jrpg-2017a-dominio,dominio,Casta,18,33,0,0,8,13,5,5,5,5
+jrpg-2017a-dominio,dominio,Hechicero,6,110,6,6,3,27,6,5,0,5
+jrpg-2017a-dominio,dominio,Asesino,6,86,3,5,3,20,4,5,1,4
+jrpg-2017a-dominio,dominio,Humano,10,97,3,3,3,21,3,4,0,4

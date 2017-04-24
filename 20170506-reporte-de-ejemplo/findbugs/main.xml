@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1493002323171" analysisTimestamp="1493002323214" release="">
+  <Project projectName="">
+    <Jar>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/build/classes/main/dominio/Humano.class</Jar>
+    <Jar>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/build/classes/main/dominio/Casta.class</Jar>
+    <Jar>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/build/classes/main/dominio/Hechicero.class</Jar>
+    <Jar>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/build/classes/main/dominio/Elfo.class</Jar>
+    <Jar>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/build/classes/main/dominio/Personaje.class</Jar>
+    <Jar>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/build/classes/main/dominio/Alianza.class</Jar>
+    <Jar>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/build/classes/main/dominio/Guerrero.class</Jar>
+    <Jar>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/build/classes/main/dominio/Asesino.class</Jar>
+    <Jar>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/build/classes/main/dominio/NonPlayableCharacter.class</Jar>
+    <Jar>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/build/classes/main/dominio/Orco.class</Jar>
+    <Jar>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/build/classes/main/dominio/MyRandom.class</Jar>
+    <Jar>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/build/classes/main/dominio/Peleable.class</Jar>
+    <AuxClasspathEntry>/home/lucas/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2/f951934aa5ae5a88d7e6dfaa6d32307d834a88be/commons-collections-3.2.jar</AuxClasspathEntry>
+    <SrcDir>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/NonPlayableCharacter.java</SrcDir>
+    <SrcDir>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Guerrero.java</SrcDir>
+    <SrcDir>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/MyRandom.java</SrcDir>
+    <SrcDir>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Personaje.java</SrcDir>
+    <SrcDir>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Casta.java</SrcDir>
+    <SrcDir>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Elfo.java</SrcDir>
+    <SrcDir>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Hechicero.java</SrcDir>
+    <SrcDir>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Alianza.java</SrcDir>
+    <SrcDir>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Asesino.java</SrcDir>
+    <SrcDir>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Humano.java</SrcDir>
+    <SrcDir>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Peleable.java</SrcDir>
+    <SrcDir>/home/lucas/workspaces/unlam/2017a/jrpg-2017a-dominio/src/main/java/dominio/Orco.java</SrcDir>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="dominio.Casta">
+      <SourceLine classname="dominio.Casta" start="13" end="61" sourcefile="Casta.java" sourcepath="dominio/Casta.java"/>
+    </Class>
+    <Method classname="dominio.Casta" name="getHabilidadesCasta" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="dominio.Casta" start="36" end="36" startBytecode="0" endBytecode="46" sourcefile="Casta.java" sourcepath="dominio/Casta.java"/>
+    </Method>
+    <Field classname="dominio.Casta" name="habilidadesCasta" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="dominio.Casta" sourcefile="Casta.java" sourcepath="dominio/Casta.java"/>
+    </Field>
+    <SourceLine classname="dominio.Casta" start="36" end="36" startBytecode="4" endBytecode="4" sourcefile="Casta.java" sourcepath="dominio/Casta.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="dominio.NonPlayableCharacter">
+      <SourceLine classname="dominio.NonPlayableCharacter" start="12" end="122" sourcefile="NonPlayableCharacter.java" sourcepath="dominio/NonPlayableCharacter.java"/>
+    </Class>
+    <Method classname="dominio.NonPlayableCharacter" name="&lt;init&gt;" signature="(Ljava/lang/String;II)V" isStatic="false">
+      <SourceLine classname="dominio.NonPlayableCharacter" start="12" end="39" startBytecode="0" endBytecode="371" sourcefile="NonPlayableCharacter.java" sourcepath="dominio/NonPlayableCharacter.java"/>
+    </Method>
+    <SourceLine classname="dominio.NonPlayableCharacter" start="21" end="35" startBytecode="33" endBytecode="175" sourcefile="NonPlayableCharacter.java" sourcepath="dominio/NonPlayableCharacter.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="dominio.Personaje">
+      <SourceLine classname="dominio.Personaje" start="32" end="439" sourcefile="Personaje.java" sourcepath="dominio/Personaje.java"/>
+    </Class>
+    <Method classname="dominio.Personaje" name="getHabilidadesRaza" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="dominio.Personaje" start="38" end="38" startBytecode="0" endBytecode="46" sourcefile="Personaje.java" sourcepath="dominio/Personaje.java"/>
+    </Method>
+    <Field classname="dominio.Personaje" name="habilidadesRaza" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="dominio.Personaje" sourcefile="Personaje.java" sourcepath="dominio/Personaje.java"/>
+    </Field>
+    <SourceLine classname="dominio.Personaje" start="38" end="38" startBytecode="4" endBytecode="4" sourcefile="Personaje.java" sourcepath="dominio/Personaje.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE">
+    <Class classname="dominio.Personaje">
+      <SourceLine classname="dominio.Personaje" start="32" end="439" sourcefile="Personaje.java" sourcepath="dominio/Personaje.java"/>
+    </Class>
+    <Method classname="dominio.Personaje" name="atacar" signature="(Ldominio/Peleable;)I" isStatic="false">
+      <SourceLine classname="dominio.Personaje" start="242" end="251" startBytecode="0" endBytecode="152" sourcefile="Personaje.java" sourcepath="dominio/Personaje.java"/>
+    </Method>
+    <SourceLine classname="dominio.Personaje" start="245" end="245" startBytecode="36" endBytecode="36" sourcefile="Personaje.java" sourcepath="dominio/Personaje.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="dominio.Personaje">
+      <SourceLine classname="dominio.Personaje" start="32" end="439" sourcefile="Personaje.java" sourcepath="dominio/Personaje.java"/>
+    </Class>
+    <Field classname="dominio.Personaje" name="tablaDeNiveles" signature="[I" isStatic="true">
+      <SourceLine classname="dominio.Personaje" sourcefile="Personaje.java" sourcepath="dominio/Personaje.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="dominio.Personaje">
+      <SourceLine classname="dominio.Personaje" start="32" end="439" sourcefile="Personaje.java" sourcepath="dominio/Personaje.java"/>
+    </Class>
+    <Method classname="dominio.Personaje" name="AsignarPuntosSkills" signature="(III)V" isStatic="false">
+      <SourceLine classname="dominio.Personaje" start="381" end="388" startBytecode="0" endBytecode="181" sourcefile="Personaje.java" sourcepath="dominio/Personaje.java"/>
+    </Method>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 23 Apr 2017 23:52:03 -0300" total_classes="12" referenced_classes="24" total_bugs="6" total_size="640" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="8.31" clock_seconds="2.63" peak_mbytes="176.27" alloc_mbytes="1705.00" gc_seconds="0.06" priority_2="6">
+    <PackageStats package="dominio" total_bugs="6" total_types="12" total_size="640" priority_2="6">
+      <ClassStats class="dominio.Alianza" sourceFile="Alianza.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="dominio.Asesino" sourceFile="Asesino.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="dominio.Casta" sourceFile="Casta.java" interface="false" size="40" bugs="1" priority_2="1"/>
+      <ClassStats class="dominio.Elfo" sourceFile="Elfo.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="dominio.Guerrero" sourceFile="Guerrero.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="dominio.Hechicero" sourceFile="Hechicero.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="dominio.Humano" sourceFile="Humano.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="dominio.MyRandom" sourceFile="MyRandom.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="dominio.NonPlayableCharacter" sourceFile="NonPlayableCharacter.java" interface="false" size="77" bugs="1" priority_2="1"/>
+      <ClassStats class="dominio.Orco" sourceFile="Orco.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="dominio.Peleable" sourceFile="Peleable.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="dominio.Personaje" sourceFile="Personaje.java" interface="false" size="294" bugs="4" priority_2="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="304" invocations="333" avgMicrosecondsPerInvocation="914" maxMicrosecondsPerInvocation="34648" standardDeviationMircosecondsPerInvocation="2574"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="111" invocations="132" avgMicrosecondsPerInvocation="848" maxMicrosecondsPerInvocation="20739" standardDeviationMircosecondsPerInvocation="2372"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="103" invocations="24" avgMicrosecondsPerInvocation="4322" maxMicrosecondsPerInvocation="20769" standardDeviationMircosecondsPerInvocation="5778"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="72" invocations="132" avgMicrosecondsPerInvocation="548" maxMicrosecondsPerInvocation="21450" standardDeviationMircosecondsPerInvocation="2074"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="71" invocations="204" avgMicrosecondsPerInvocation="352" maxMicrosecondsPerInvocation="6204" standardDeviationMircosecondsPerInvocation="724"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="66" invocations="24" avgMicrosecondsPerInvocation="2780" maxMicrosecondsPerInvocation="13770" standardDeviationMircosecondsPerInvocation="3535"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="65" invocations="132" avgMicrosecondsPerInvocation="494" maxMicrosecondsPerInvocation="21020" standardDeviationMircosecondsPerInvocation="1923"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="62" invocations="146" avgMicrosecondsPerInvocation="428" maxMicrosecondsPerInvocation="40494" standardDeviationMircosecondsPerInvocation="3343"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="61" invocations="132" avgMicrosecondsPerInvocation="467" maxMicrosecondsPerInvocation="23943" standardDeviationMircosecondsPerInvocation="2080"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="60" invocations="132" avgMicrosecondsPerInvocation="456" maxMicrosecondsPerInvocation="8190" standardDeviationMircosecondsPerInvocation="936"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="57" invocations="132" avgMicrosecondsPerInvocation="434" maxMicrosecondsPerInvocation="40920" standardDeviationMircosecondsPerInvocation="3565"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="52" invocations="43" avgMicrosecondsPerInvocation="1220" maxMicrosecondsPerInvocation="22889" standardDeviationMircosecondsPerInvocation="3800"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="51" invocations="132" avgMicrosecondsPerInvocation="388" maxMicrosecondsPerInvocation="7257" standardDeviationMircosecondsPerInvocation="814"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="50" invocations="301" avgMicrosecondsPerInvocation="168" maxMicrosecondsPerInvocation="1905" standardDeviationMircosecondsPerInvocation="283"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="46" invocations="24" avgMicrosecondsPerInvocation="1956" maxMicrosecondsPerInvocation="32287" standardDeviationMircosecondsPerInvocation="6403"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="41" invocations="24" avgMicrosecondsPerInvocation="1710" maxMicrosecondsPerInvocation="12783" standardDeviationMircosecondsPerInvocation="3301"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="38" invocations="24" avgMicrosecondsPerInvocation="1585" maxMicrosecondsPerInvocation="9315" standardDeviationMircosecondsPerInvocation="2365"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="30" invocations="24" avgMicrosecondsPerInvocation="1281" maxMicrosecondsPerInvocation="8833" standardDeviationMircosecondsPerInvocation="2412"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="30" invocations="146" avgMicrosecondsPerInvocation="209" maxMicrosecondsPerInvocation="22149" standardDeviationMircosecondsPerInvocation="1842"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="30" invocations="12" avgMicrosecondsPerInvocation="2512" maxMicrosecondsPerInvocation="18646" standardDeviationMircosecondsPerInvocation="5262"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop" totalMilliseconds="27" invocations="12" avgMicrosecondsPerInvocation="2314" maxMicrosecondsPerInvocation="17811" standardDeviationMircosecondsPerInvocation="4901"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="26" invocations="337" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="1090" standardDeviationMircosecondsPerInvocation="99"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="25" invocations="24" avgMicrosecondsPerInvocation="1043" maxMicrosecondsPerInvocation="5028" standardDeviationMircosecondsPerInvocation="1396"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="24" invocations="24" avgMicrosecondsPerInvocation="1039" maxMicrosecondsPerInvocation="7277" standardDeviationMircosecondsPerInvocation="1602"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="24" invocations="12" avgMicrosecondsPerInvocation="2013" maxMicrosecondsPerInvocation="17513" standardDeviationMircosecondsPerInvocation="4726"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="23" invocations="132" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="4722" standardDeviationMircosecondsPerInvocation="493"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="22" invocations="57" avgMicrosecondsPerInvocation="403" maxMicrosecondsPerInvocation="3153" standardDeviationMircosecondsPerInvocation="585"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="18" invocations="12" avgMicrosecondsPerInvocation="1545" maxMicrosecondsPerInvocation="13238" standardDeviationMircosecondsPerInvocation="3600"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBugsSummaryStats" totalMilliseconds="17" invocations="24" avgMicrosecondsPerInvocation="712" maxMicrosecondsPerInvocation="9630" standardDeviationMircosecondsPerInvocation="2236"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
